@@ -225,3 +225,24 @@ Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.2ms)
 
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/annotate:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to AddInvoiceApprovedAndImprovedAt (20190930211842)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "invoices" ADD "approved" boolean DEFAULT 0[0m
+  ↳ db/migrate/20190930211842_add_invoice_approved_and_improved_at.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "invoices" ADD "approved_at" datetime[0m
+  ↳ db/migrate/20190930211842_add_invoice_approved_and_improved_at.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190930211842"]]
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/itsjms/.rvm/gems/ruby-2.5.3/bin/rake:23

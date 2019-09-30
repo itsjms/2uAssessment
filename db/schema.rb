@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_30_210331) do
+ActiveRecord::Schema.define(version: 2019_09_30_211842) do
 
   create_table "invoices", force: :cascade do |t|
     t.string "invoice_number"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2019_09_30_210331) do
     t.string "remittance_address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "approved", default: false
+    t.datetime "approved_at"
   end
 
 end
