@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  invoice_number: MyString
+  total: 1.5
+  currency: MyString
+  invoice_date: 2019-09-30 17:03:31
+  due_date: 2019-09-30 17:03:31
+  vendor_name: MyString
+  remittance_address: MyString
+
+two:
+  invoice_number: MyString
+  total: 1.5
+  currency: MyString
+  invoice_date: 2019-09-30 17:03:31
+  due_date: 2019-09-30 17:03:31
+  vendor_name: MyString
+  remittance_address: MyString
