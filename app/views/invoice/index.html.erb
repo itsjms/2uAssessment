@@ -10,6 +10,7 @@
         <th>due_date</th>
         <th>vendor_name</th>
         <th>remittance_address</th>
+        <th>actions</th>
       </tr>
     </thead>
     <tbody>
@@ -22,6 +23,7 @@
           <td><%= invoice.due_date %></td>
           <td><%= invoice.vendor_name %></td>
           <td><%= invoice.remittance_address %></td>
+          <td><%= link_to "Approve", invoice_approve_path(invoice) %></td>
         </tr>
       <% end %>
     </tbody>
