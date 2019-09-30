@@ -1,2 +1,31 @@
-<h1>Invoice#index</h1>
-<p>Find me in app/views/invoice/index.html.erb</p>
+<h1>Invoices</h1>
+<% if @invoices.size > 0 %>
+  <table>
+    <thead>
+      <tr>
+        <th>invoice_number</th>
+        <th>total</th>
+        <th>currency</th>
+        <th>invoice_date</th>
+        <th>due_date</th>
+        <th>vendor_name</th>
+        <th>remittance_address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @invoices.each do |invoice| %>
+        <tr>
+          <td><%= invoice.invoice_number %></td>
+          <td><%= invoice.total %></td>
+          <td><%= invoice.currency %></td>
+          <td><%= invoice.invoice_date %></td>
+          <td><%= invoice.due_date %></td>
+          <td><%= invoice.vendor_name %></td>
+          <td><%= invoice.remittance_address %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>No invoices to display.</p>
+<% end %>
