@@ -1,24 +1,17 @@
-# README
+# Getting started
+This application has been built using ruby-2.5.3 so please switch to that version using RVM before running `bundle install`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Starting the app:
+```
+bundle install
+rake db:setup
+rails s
+```
 
-Things you may want to cover:
+## Missing requirements
+* Missing basic test suite
+* Missing react.js implementation
+* Missing database validations
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Time of implementation
+15 minutes.
