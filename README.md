@@ -12,6 +12,7 @@ rails s
 * Missing basic test suite
 * Missing react.js implementation
 * Missing database validations
+* Missing websockets/2-way binding
 
 ## Time of implementation
 15 minutes.
